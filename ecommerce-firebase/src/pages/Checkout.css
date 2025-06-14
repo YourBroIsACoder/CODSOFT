@@ -1,0 +1,111 @@
+/* src/components/Checkout.css */
+.checkout-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-empty {
+  text-align: center;
+  padding: 2rem;
+}
+
+.checkout-title {
+  color: #4361ee;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.checkout-items {
+  margin-bottom: 1.5rem;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.item-info {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  padding-top: 1rem;
+  border-top: 2px solid #e9ecef;
+}
+
+.checkout-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.back-to-cart-btn {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: 1px solid #495057;
+  color: #495057;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-to-cart-btn:hover {
+  background: #f8f9fa;
+}
+
+.pay-now-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pay-now-btn:hover {
+  background-color: #3a0ca3;
+}
+
+.continue-shopping-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.continue-shopping-btn:hover {
+  background-color: #3a0ca3;
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .checkout-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .back-to-cart-btn,
+  .pay-now-btn {
+    width: 100%;
+  }
+}
